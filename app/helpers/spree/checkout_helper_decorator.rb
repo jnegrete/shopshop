@@ -6,7 +6,7 @@ module Spree::CheckoutHelper
     items = states.map do |state|
       text = I18n.t("spree.order_state.#{state}").titleize
 
-      css_classes = ['disable']
+      css_classes = ['disabled']
       current_index = states.index(@order.state)
       state_index = states.index(state)
 
